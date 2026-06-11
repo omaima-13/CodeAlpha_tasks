@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ImageGallery</title>
+</head>
+
+<body>
+    <h1 class="head">Image Gallery</h1>
+    <div class="filterButton">
+        <button onclick="filterImages('all')">All</button>
+        <button onclick="filterImages('nature')">Nature</button>
+        <button onclick="filterImages('food')">Food</button>
+        <button onclick="filterImages('coffee')">Coffee</button>
+        <button onclick="filterImages('sea')">Beaches</button>
+        <button onclick="filterImages('car')">Car</button>
+    </div>
+
+    <div class="gallery">
+            <img src="car1.jpg" class="car" onclick="openLightbox(this)">
+            <img src="car2.jpg" class="car" onclick="openLightbox(this)">
+            <img src="car3.jpg" class="car" onclick="openLightbox(this)">
+            <img src="car4.jpg" class="car" onclick="openLightbox(this)">
+            <img src="car5.jpg" class="car" onclick="openLightbox(this)">
+            <img src="car6.jpg" class="car" onclick="openLightbox(this)">
+            
+            <img src="coffee1.jpg" class="coffee" onclick="openLightbox(this)">
+            <img src="coffee2.jpg" class="coffee" onclick="openLightbox(this)">
+            <img src="coffee3.jpg" class="coffee" onclick="openLightbox(this)">
+            <img src="coffee4.jpg" class="coffee" onclick="openLightbox(this)">
+            <img src="coffee5.jpg" class="coffee" onclick="openLightbox(this)">
+            <img src="coffee6.jpg" class="coffee" onclick="openLightbox(this)">
+
+            <img src="food1.jpg" class="food" onclick="openLightbox(this)">
+            <img src="food2.jpg" class="food" onclick="openLightbox(this)">
+            <img src="food3.jpg" class="food" onclick="openLightbox(this)">
+            <img src="food4.jpg" class="food" onclick="openLightbox(this)">
+            <img src="food5.jpg" class="food" onclick="openLightbox(this)">
+            <img src="food6.jpg" class="food" onclick="openLightbox(this)">
+        
+        
+            <img src="nature1.jpg" class="nature" onclick="openLightbox(this)">
+            <img src="nature2.jpg" class="nature" onclick="openLightbox(this)">
+            <img src="nature3.jpg" class="nature" onclick="openLightbox(this)">
+            <img src="nature4.jpg" class="nature" onclick="openLightbox(this)">
+            <img src="nature5.jpg" class="nature" onclick="openLightbox(this)">
+        
+            <img src="sea1.jpg" class="sea" onclick="openLightbox(this)">
+            <img src="sea2.jpg" class="sea" onclick="openLightbox(this)">
+            <img src="sea3.jpg" class="sea" onclick="openLightbox(this)">
+            <img src="sea4.jpg" class="sea" onclick="openLightbox(this)">
+            <img src="sea5.jpg" class="sea" onclick="openLightbox(this)">
+            <img src="sea6.jpg" class="sea" onclick="openLightbox(this)">
+
+    </div>
+
+    <div id="lightbox">
+        <button onclick="prevImage()">❮</button>
+
+        <img id="lightbox-img">
+
+        <button onclick="nextImage()">❯</button>
+        <br><br>
+        <button onclick="closeLightbox()">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
